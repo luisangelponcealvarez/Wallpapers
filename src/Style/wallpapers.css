@@ -1,0 +1,129 @@
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 5em auto;
+  border-radius: 20px;
+  border: 3px solid rgb(237, 237, 237);
+  background-color: rgba(250, 250, 250, 0.3);
+  scroll-margin-top: 70px;
+}
+
+#wallpapers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+}
+
+#wallpapers .container-wallpapers {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estos son los estilos de los cards */
+
+.card-wallpaper {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 300px;
+  margin: 1em 1.4em;
+}
+
+.card-wallpaper .face {
+  width: 400px;
+  height: 250px;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.card-wallpaper .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.card-wallpaper .front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-wallpaper .front h5 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  color: #f3f3f3;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.card-wallpaper .back {
+  position: absolute;
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(3, 35, 54);
+  padding: 15px;
+  color: #f3f3f3;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 7px 10px #000;
+}
+
+.card-wallpaper .back .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+
+.card-wallpaper .back .link a {
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
+.card-wallpaper .back h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+/* animación de la card */
+
+.card-wallpaper:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card-wallpaper:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+@media (max-width: 800px) {
+  .card-wallpaper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    margin: 10px auto;
+  }
+
+  .card-wallpaper .face {
+    width: 300px;
+    height: 250px;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 1s;
+  }
+}
