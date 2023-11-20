@@ -1,4 +1,4 @@
-section {
+/* section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -9,6 +9,10 @@ section {
   border: 3px solid rgb(237, 237, 237);
   background-color: rgba(250, 250, 250, 0.3);
   scroll-margin-top: 70px;
+} */
+
+body {
+  background-image: url();
 }
 
 #wallpapers {
@@ -22,7 +26,7 @@ section {
 }
 
 #wallpapers .container-wallpapers {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
