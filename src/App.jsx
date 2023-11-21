@@ -2,6 +2,7 @@ import { MapCard } from "./Components/MapCard";
 import "./Style/wallpapers.css";
 import "./Style/Button.css";
 import { ListWallpapers } from "./Data/ListWallpapers";
+import { Footer } from "./Components/Footer";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
           <h1>Wallpapers</h1>
 
           <a
-            href="https://github.com/luisangelponcealvarez/Wallpapers"
+            href="https://github.com/luisangelponcealvarez/Wallpapers/tree/main/Wallpapers"
             target="_blank"
           >
             <button>
@@ -25,6 +26,7 @@ function App() {
           <MapCard wallpaper={wallpaper} key={index} />
         ))}
       </section>
+      <Footer />
     </>
   );
 }

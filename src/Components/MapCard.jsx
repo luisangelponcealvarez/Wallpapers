@@ -9,11 +9,7 @@ export function MapCard({ wallpaper }) {
       <div className="face front">
         <img
           className="card-img-top card-image"
-          src={
-            "https://github.com/luisangelponcealvarez/Wallpapers/tree/main/public/Wallpapers/" +
-            NombreWallpaper +
-            ".jpg"
-          }
+          src={"./Wallpapers/" + NombreWallpaper + ".jpg"}
           alt={NombreWallpaper}
         />
         <h5>{NombreWallpaper}</h5>
@@ -25,7 +21,7 @@ export function MapCard({ wallpaper }) {
         <div className="link">
           <a
             href={
-              "https://github.com/luisangelponcealvarez/Wallpapers/tree/main/public/Wallpapers/" +
+              "https://github.com/luisangelponcealvarez/Wallpapers/tree/main/Wallpapers/" +
               NombreWallpaper +
               ".jpg"
             }
