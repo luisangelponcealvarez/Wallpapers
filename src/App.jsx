@@ -1,7 +1,7 @@
-import { ListWallpapers } from "../public/Data/ListWallpapers";
 import { MapCard } from "./Components/MapCard";
 import "./Style/wallpapers.css";
 import "./Style/Button.css";
+import { ListWallpapers } from "./Data/ListWallpapers";
 
 function App() {
   return (

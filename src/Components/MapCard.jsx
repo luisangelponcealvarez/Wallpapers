@@ -10,9 +10,9 @@ export function MapCard({ wallpaper }) {
         <img
           className="card-img-top card-image"
           src={
-            "https://github.com/luisangelponcealvarez/Wallpapers/blob/main/" +
+            "https://github.com/luisangelponcealvarez/Wallpapers/tree/main/public/Wallpapers/" +
             NombreWallpaper +
-            ".jpg?raw=true"
+            ".jpg"
           }
           alt={NombreWallpaper}
         />
@@ -25,7 +25,7 @@ export function MapCard({ wallpaper }) {
         <div className="link">
           <a
             href={
-              "https://github.com/luisangelponcealvarez/Wallpapers/blob/main/" +
+              "https://github.com/luisangelponcealvarez/Wallpapers/tree/main/public/Wallpapers/" +
               NombreWallpaper +
               ".jpg"
             }

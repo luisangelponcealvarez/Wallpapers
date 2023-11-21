@@ -12,7 +12,10 @@
 } */
 
 body {
-  background-image: url();
+  background-color: aquamarine;
+  background-image: url("https://github.com/luisangelponcealvarez/Wallpapers/blob/main/public/Wallpapers/landscape.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #wallpapers {
