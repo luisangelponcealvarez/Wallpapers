@@ -1,5 +1,4 @@
-import "../Style/wallpapers.css";
-import "../Style/Button.css";
+import "../../Style/main.css";
 
 export function MapCard({ wallpaper }) {
   const { NombreWallpaper, Resolution } = wallpaper;
@@ -26,11 +25,11 @@ export function MapCard({ wallpaper }) {
               ".jpg"
             }
             target="_blank"
+            className="btn btn-outline-secondary
+              m-2"
           >
-            <button>
-              <i className="fa-brands fa-github GitHub" />
-              Download
-            </button>
+            <i className="fa-brands fa-github GitHub" />
+            Download
           </a>
         </div>
       </div>

@@ -1,13 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import { Error404 } from "./Components/Error/404.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { App } from "./App.jsx";
+import { MyWallpapers } from "./Components/MyWallpapers/index.jsx";
 
 const routes = [
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/MyWallpapers",
+    element: <MyWallpapers />,
   },
   {
     path: "/*",

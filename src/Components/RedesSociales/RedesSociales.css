@@ -1,0 +1,51 @@
+/* redes */
+
+#redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Hover de iconos */
+  .Linkedin:hover {
+    color: #0e76a8;
+  }
+  .Youtube:hover {
+    color: #c4302b;
+  }
+  .Github:hover {
+    color: #171515;
+  }
+  .Instagram:hover {
+    color: #f436d7;
+  }
+  .Facebook:hover {
+    color: #3b5998;
+  }
+  .Twitter:hover {
+    color: #00acee;
+  }
+  .Spotify:hover {
+    color: #00ff1e;
+  }
+}
+
+/* color de icons de redes sociales */
+#redes,
+.Linkedin,
+.Youtube,
+.Github,
+.Instagram,
+.Facebook,
+.Twitter,
+.Spotify {
+  display: flex;
+  flex-wrap: wrap;
+  color: #000;
+  font-size: 30px;
+  margin: 10px;
+}
+@media (max-width: 800px) {
+  #redes {
+    width: 90%;
+  }
+}
