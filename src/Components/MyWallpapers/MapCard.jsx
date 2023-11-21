@@ -9,9 +9,9 @@ export function MapCard({ wallpaper }) {
         <img
           className="card-img-top card-image"
           src={
-            "https://github.com/luisangelponcealvarez/Wallpapers/blob/cab7288acdf2608cec08c9c8fc5278c840de7127/Wallpapers" +
+            "https://github.com/luisangelponcealvarez/SiteWallpapers/blob/main/Wallpapers/" +
             NombreWallpaper +
-            ".jpg"
+            ".jpg?raw=true"
           }
           alt={NombreWallpaper}
         />
