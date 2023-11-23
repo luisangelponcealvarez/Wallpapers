@@ -17,7 +17,7 @@ export function useWallpapers() {
       const name = imagePaths.map((path) => {
         const fileName = path.split("/").pop();
         const nameWithoutExtension = fileName.split(".").slice(0, -1).join(".");
-        return { nameWithoutExtension, path };
+        return { nameWithoutExtension };
       });
 
       setWallpapers(name);

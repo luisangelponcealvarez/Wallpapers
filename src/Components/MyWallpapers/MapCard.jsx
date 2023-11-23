@@ -6,7 +6,11 @@ export function MapCard({ wallpaper }) {
       <div className="face front">
         <img
           className="card-img-top card-image"
-          src={wallpaper.path}
+          src={
+            "https://github.com/luisangelponcealvarez/SiteWallpapers/blob/main/Wallpapers/" +
+            wallpaper.nameWithoutExtension +
+            ".jpg?raw=true"
+          }
           alt={wallpaper.nameWithoutExtension}
         />
         <h5>{wallpaper.nameWithoutExtension}</h5>
