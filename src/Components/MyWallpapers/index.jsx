@@ -6,8 +6,6 @@ import { useWallpapers } from "./UseWallpapers";
 export function MyWallpapers() {
   const { wallpapers, error, loading } = useWallpapers();
 
-  console.log(wallpapers);
-
   if (loading) return <p>Loading database...</p>;
   if (error) return <code>{JSON.stringify(error)}</code>;
 
@@ -30,7 +28,6 @@ export function MyWallpapers() {
 
         {wallpapers.map((wallpaper, index) => (
           <MapCard wallpaper={wallpaper} key={index} />
-          // <img src={wallpaper.path} alt="" key={index} />
         ))}
       </section>
 

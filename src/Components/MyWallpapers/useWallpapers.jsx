@@ -14,14 +14,15 @@ export function useWallpapers() {
 
       const imagePaths = Object.keys(imageContext);
 
-      const importedImages = imagePaths.map((path) => ({
-        path,
-        module: imageContext[path],
-      }));
+      const name = imagePaths.map((path) => {
+        const fileName = path.split("/").pop();
+        const nameWithoutExtension = fileName.split(".").slice(0, -1).join(".");
+        return { nameWithoutExtension, path };
+      });
 
-      console.log("Imported Images:", importedImages);
+      console.log("Imported Images:", name);
 
-      setWallpapers(importedImages);
+      setWallpapers(name);
     } catch (error) {
       console.log("Error importing images:", error);
       setError(error);

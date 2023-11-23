@@ -7,24 +7,24 @@ export function MapCard({ wallpaper }) {
         <img
           className="card-img-top card-image"
           src={wallpaper.path}
-          alt={wallpaper.path}
+          alt={wallpaper.nameWithoutExtension}
         />
-        <h5>{wallpaper.path}</h5>
+        <h5>{wallpaper.nameWithoutExtension}</h5>
       </div>
 
       <div className="face back">
-        {/* <h5>Nombre: {NombreWallpaper}</h5> */}
-        {/* <p>Resolución: {Resolution}</p> */}
+        <h4>{wallpaper.nameWithoutExtension}</h4>
         <div className="link">
           <a
             href={
-              "https://github.com/luisangelponcealvarez/Wallpapers/tree/main/Wallpapers/"
+              "https://github.com/luisangelponcealvarez/Wallpapers/tree/main/Wallpapers/" +
+              wallpaper.nameWithoutExtension +
+              ".jpg"
             }
             target="_blank"
-            className="btn btn-outline-secondary
-              m-2"
+            className="btn btn-outline-secondary"
           >
-            <i className="fa-brands fa-github GitHub" />
+            <i className="fa-brands fa-github GitHub m-2" />
             Download
           </a>
         </div>
