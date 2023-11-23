@@ -1,9 +1,16 @@
-import { ListWallpapers } from "../../Data/ListWallpapers";
 import { Footer } from "../Footer";
 import { Heder } from "../Heder";
 import { MapCard } from "./MapCard";
+import { useWallpapers } from "./UseWallpapers";
 
 export function MyWallpapers() {
+  const { wallpapers, error, loading } = useWallpapers();
+
+  console.log(wallpapers);
+
+  if (loading) return <p>Loading database...</p>;
+  if (error) return <code>{JSON.stringify(error)}</code>;
+
   return (
     <>
       <Heder />
@@ -21,8 +28,9 @@ export function MyWallpapers() {
           </a>
         </div>
 
-        {ListWallpapers.map((wallpaper, index) => (
+        {wallpapers.map((wallpaper, index) => (
           <MapCard wallpaper={wallpaper} key={index} />
+          // <img src={wallpaper.path} alt="" key={index} />
         ))}
       </section>
 

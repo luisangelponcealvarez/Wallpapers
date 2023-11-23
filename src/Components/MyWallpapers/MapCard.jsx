@@ -1,32 +1,24 @@
 import "../../Style/main.css";
 
 export function MapCard({ wallpaper }) {
-  const { NombreWallpaper, Resolution } = wallpaper;
-
   return (
     <div className="card-wallpaper">
       <div className="face front">
         <img
           className="card-img-top card-image"
-          src={
-            "https://github.com/luisangelponcealvarez/SiteWallpapers/blob/main/Wallpapers/" +
-            NombreWallpaper +
-            ".jpg?raw=true"
-          }
-          alt={NombreWallpaper}
+          src={wallpaper.path}
+          alt={wallpaper.path}
         />
-        <h5>{NombreWallpaper}</h5>
+        <h5>{wallpaper.path}</h5>
       </div>
 
       <div className="face back">
-        <h5>Nombre: {NombreWallpaper}</h5>
-        <p>Resolución: {Resolution}</p>
+        {/* <h5>Nombre: {NombreWallpaper}</h5> */}
+        {/* <p>Resolución: {Resolution}</p> */}
         <div className="link">
           <a
             href={
-              "https://github.com/luisangelponcealvarez/Wallpapers/tree/main/Wallpapers/" +
-              NombreWallpaper +
-              ".jpg"
+              "https://github.com/luisangelponcealvarez/Wallpapers/tree/main/Wallpapers/"
             }
             target="_blank"
             className="btn btn-outline-secondary
