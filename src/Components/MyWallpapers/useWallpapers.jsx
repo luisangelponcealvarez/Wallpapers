@@ -20,8 +20,6 @@ export function useWallpapers() {
         return { nameWithoutExtension, path };
       });
 
-      console.log("Imported Images:", name);
-
       setWallpapers(name);
     } catch (error) {
       console.log("Error importing images:", error);

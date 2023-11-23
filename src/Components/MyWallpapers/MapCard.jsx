@@ -24,7 +24,7 @@ export function MapCard({ wallpaper }) {
             target="_blank"
             className="btn btn-outline-secondary"
           >
-            <i className="fa-brands fa-github GitHub m-2" />
+            <i className="fa-brands fa-github icon" />
             Download
           </a>
         </div>

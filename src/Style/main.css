@@ -74,6 +74,12 @@ body {
   transition: 1s;
 }
 
+.card-wallpaper .face .icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 5px;
+}
 .card-wallpaper .front {
   transform: perspective(600px) rotateY(0deg);
   box-shadow: 0 5px 10px #000;
