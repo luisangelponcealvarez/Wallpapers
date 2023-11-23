@@ -1,7 +1,7 @@
 import { Footer } from "../Footer";
 import { Heder } from "../Heder";
 import { MapCard } from "./MapCard";
-import { useWallpapers } from "./UseWallpapers";
+import { useWallpapers } from "./useWallpapers";
 
 export function MyWallpapers() {
   const { wallpapers, error, loading } = useWallpapers();
