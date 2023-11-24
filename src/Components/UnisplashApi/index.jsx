@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import Card from "./Card";
-// import "./Unisplash.css";
 import { fetchImages } from "../../Api";
 import { Footer } from "../Footer";
 import { Heder } from "../Heder";
+import { Loading } from "../Loading";
 
-export const UnsplashImages = () => {
+export function UnsplashImages() {
   // Estados de los elementos
   const [images, setImages] = useState([]);
   const [page, setPage] = useState(1);
@@ -15,12 +13,11 @@ export const UnsplashImages = () => {
   const [loading, setLoading] = useState(false);
 
   // petición a la api
-
   useEffect(() => {
     const fetchImagesData = async () => {
       setLoading(true);
       const newImages = await fetchImages(query, page);
-      setImages(newImages);
+      setImages((prevImages) => [...prevImages, ...newImages]);
       setLoading(false);
     };
 
@@ -30,12 +27,12 @@ export const UnsplashImages = () => {
   }, [query, page]);
 
   // Función para buscar
-
   const handleSearch = (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
     const searchQuery = formData.get("search");
     setPage(1);
+    setImages([]); // Limpiar las imágenes al realizar una nueva búsqueda
     setQuery(searchQuery);
   };
 
@@ -45,15 +42,10 @@ export const UnsplashImages = () => {
       <section id="wallpapers">
         {query && (
           <>
-            {loading && (
-              <div className="loading-icon d-inline-flex justify-content-center aling-items-center">
-                <FontAwesomeIcon icon={faSpinner} spin size="3x" />
-              </div>
-            )}
+            {loading && images.length > 0 && <Loading />}
 
-            {images.map((image) => (
-              <Card data={image} key={image.id} />
-            ))}
+            {images.length > 0 &&
+              images.map((image) => <Card data={image} key={image.id} />)}
 
             <div className="btn-page">
               <button
@@ -77,4 +69,4 @@ export const UnsplashImages = () => {
       <Footer />
     </>
   );
-};
+}

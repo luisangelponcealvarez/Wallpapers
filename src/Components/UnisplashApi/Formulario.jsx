@@ -10,7 +10,7 @@ export function Formulario({ handleSearch }) {
           aria-label="Search"
         />
 
-        <button className="btn btn-outline-secondary" type="submit">
+        <button className="btn btn-outline-secondary rounded" type="submit">
           Search
         </button>
       </form>
