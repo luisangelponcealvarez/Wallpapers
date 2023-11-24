@@ -38,11 +38,12 @@ body {
 }
 
 #wallpapers .text {
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin: 5em auto -2em;
 }
 
 #wallpapers .text h3 {
