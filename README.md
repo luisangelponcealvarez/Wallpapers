@@ -1,6 +1,6 @@
 # SiteWallpapers 👋
 
-Este proyecto es un sitio web para practicar el consumo de la api de Unisplash
+Este proyecto es un sitio web para practicar el consumo de la api de Unis plash y también algunas funciónes de JavaScript
 
 ## Instalación
 
