@@ -15,7 +15,7 @@ const fetchImages = async (query, page) => {
         query: query,
         client_id: accessKey,
         page: page,
-        per_page: 9,
+        per_page: 6,
       },
     });
     return response.data.results;

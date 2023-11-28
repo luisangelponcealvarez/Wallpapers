@@ -49,18 +49,10 @@ export function UnsplashImages() {
 
             <div className="btn-page">
               <button
-                onClick={() => setPage((page) => Math.max(page - 1, 1))}
-                disabled={page === 1}
-                className="btn btn-secondary"
-              >
-                Anterior
-              </button>
-
-              <button
                 onClick={() => setPage((page) => page + 1)}
                 className="btn btn-secondary"
               >
-                Siguiente
+                Cargar Más
               </button>
             </div>
           </>
