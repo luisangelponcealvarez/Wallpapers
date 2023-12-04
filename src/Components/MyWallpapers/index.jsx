@@ -16,7 +16,7 @@ export function MyWallpapers() {
 
       <section id="wallpapers">
         <div className="text">
-          <h3>Wallpapers Luis Angel</h3>
+          <h3>Wallpapers Luis Angel Ponce Alvarez</h3>
           <a
             href="https://github.com/luisangelponcealvarez/Wallpapers/tree/main/Wallpapers"
             target="_blank"

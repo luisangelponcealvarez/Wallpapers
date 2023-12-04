@@ -1,10 +1,10 @@
-import { UnsplashImages } from "./Components/UnisplashApi";
+import { MyWallpapers } from "./Components/MyWallpapers";
 import "./Style/main.css";
 
 export function App() {
   return (
     <>
-      <UnsplashImages />
+      <MyWallpapers />
     </>
   );
 }

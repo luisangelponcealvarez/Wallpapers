@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { Error404 } from "./Components/Error/404.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { App } from "./App.jsx";
-import { MyWallpapers } from "./Components/MyWallpapers/index.jsx";
+import { UnsplashImages } from "./Components/UnisplashApi/index.jsx";
 
 const routes = [
   {
@@ -11,8 +11,8 @@ const routes = [
     element: <App />,
   },
   {
-    path: "/MyWallpapers",
-    element: <MyWallpapers />,
+    path: "/Unsplash",
+    element: <UnsplashImages />,
   },
   {
     path: "/*",
