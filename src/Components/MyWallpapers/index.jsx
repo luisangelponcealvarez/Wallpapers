@@ -1,5 +1,4 @@
 import { Footer } from "../Footer";
-import { Heder } from "../Heder";
 import { Loading } from "../Loading";
 import { MapCard } from "./MapCard";
 import { useWallpapers } from "./useWallpapers";
@@ -12,8 +11,6 @@ export function MyWallpapers() {
 
   return (
     <>
-      <Heder />
-
       <section id="wallpapers">
         <div className="text">
           <h3>Wallpapers Luis Angel Ponce Alvarez</h3>
