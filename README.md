@@ -1,40 +1,41 @@
-# SiteWallpapers 👋
+# Wallpapersluisangel 👋
 
-Este proyecto es un sitio web para practicar el consumo de la api de Unis plash y también algunas funciónes de JavaScript para renderizar elementos de una carpeta llamada wallpapers
+This is a website that allows you to quickly and easily view wallpapers from a folder that is in this same project, which is the wallpapers folder, so that the code you find in this project is structured
 
-## Instalación
+## Installation
 
-Para utilizar este proyecto, asegúrese de tener instalado [node](https://nodejs.org/en/download). Si ya tiene instalado node, ejecute los siguiente comando:
+To use this project, make sure you have [node](https://nodejs.org/en/download) installed. If you already have node installed, run the following commands:
 
-## Clonar el repositorio
+## Clone the repository
 
 ```
 git clone  https://github.com/luisangelponcealvarez/SiteWallpapers.git
 ```
 
-## Instalar packetes
+## Install packages
 
 ```
 npm install
 ```
 
-## Ejecutar el proyecto
+## Run the project
 
 ```
 npm run dev
 ```
 
-Esta en el puerto: http://localhost:3000
+This is on the port
+: http://localhost:3000
 
-## Pasos para añadir wallpapers
+## Steps to add wallpapers
 
-1.  Descarga cualquier wallpaper
-2.  Ponle el nombre que este corto pero descriptivo
-3.  Que el wallpaper tenga la extención (jpg) para que funcione
-4.  Añade el wallpaper en la carpeta /Wallpapers
+1. Download any wallpaper
+2. Give it a short but descriptive name
+3. Make sure the wallpaper has the (jpg) extension to work
+4. Add the wallpaper to the /Wallpapers folder
 
-### [Visita el sitio ya publico](https://sitewallpapers.netlify.app/) 💻
+### [Visit the site already published](https://sitewallpapers.netlify.app/)
 
-## Miniatura
+## Thumbnail
 
 ![Miniatura](/public/miniatura.png)
