@@ -7,7 +7,8 @@
 }
 
 body {
-  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  background-color: #d9afd9;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
 }
 
 #wallpapers {
@@ -21,7 +22,7 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin: 4em auto -1em;
+  margin: 2em auto 1em;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -43,7 +44,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 5em auto -2em;
+  margin: 1em auto -2em;
 }
 
 #wallpapers .text h3 {
@@ -68,7 +69,7 @@ body {
   flex-wrap: wrap;
   width: 400px;
   height: 300px;
-  margin: 5em auto -5em;
+  margin: 5em auto -1em;
 }
 
 .card-wallpaper .face {

@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer>
       <RedesSociales />
-      <p className="fs-5">© 2023 Luis Angel Ponce Alvarez - Unisplash </p>
+      <p className="fs-5">© 2023 Luis Angel Ponce Alvarez</p>
     </footer>
   );
 }
