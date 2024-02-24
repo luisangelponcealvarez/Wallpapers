@@ -65,11 +65,13 @@ body {
 /* Estos son los estilos de los cards */
 
 .card-wallpaper {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  width: 400px;
+  width: 350px;
   height: 300px;
-  margin: 5em auto -1em;
+  margin: 1em auto 0em;
 }
 
 .card-wallpaper .face {

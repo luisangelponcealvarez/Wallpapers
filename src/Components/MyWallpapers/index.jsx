@@ -25,7 +25,9 @@ export function MyWallpapers() {
         </div>
 
         {wallpapers.map((wallpaper, index) => (
-          <MapCard wallpaper={wallpaper} key={index} />
+          <div className="col-md-4">
+            <MapCard wallpaper={wallpaper} key={index} />
+          </div>
         ))}
       </section>
 

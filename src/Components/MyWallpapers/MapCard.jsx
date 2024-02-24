@@ -23,7 +23,7 @@ export function MapCard({ wallpaper }) {
         <div className="link">
           <a
             href={
-              "https://github.com/luisangelponcealvarez/Wallpapers/tree/main/Wallpapers/" +
+              "https://raw.githubusercontent.com/luisangelponcealvarez/wallpapersluisangel/main/Wallpapers/" +
               wallpaper.nameWithoutExtension +
               ".jpg"
             }
