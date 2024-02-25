@@ -1,12 +1,11 @@
-import { Footer } from "../Footer";
-import { Loading } from "../Loading";
-import { MapCard } from "./MapCard";
+// import { Loading } from "../Loading";
+// import { MapCard } from "../MapCard";
 import { useWallpapers } from "./useWallpapers";
 
 export function MyWallpapers() {
-  const { wallpapers, error, loading } = useWallpapers();
+  const { wallpapers, error } = useWallpapers();
 
-  if (loading) return <Loading />;
+  // if (loading) return <Loading />;
   if (error) return <code>{JSON.stringify(error)}</code>;
 
   return (
@@ -30,8 +29,6 @@ export function MyWallpapers() {
           </div>
         ))}
       </section>
-
-      <Footer />
     </>
   );
 }
